@@ -3,7 +3,7 @@ import sqlite3
 connection_string=sqlite3.connect("user.db")
 cursor=connection_string.cursor()
 
-table_creation="CREATE TABLE IF NOT EXISTS user(name TEXT, fname TEXT, mname TEXT ,age INTEGER, class INTEGER, section TEXT, roll INTEGER)"
+table_creation="CREATE TABLE IF NOT EXISTS user(name TEXT, father_name TEXT, mother_name TEXT ,age INTEGER, class INTEGER, section TEXT, roll INTEGER)"
 cursor.execute(table_creation)
 
 cursor.execute("INSERT INTO user VALUES('Wasif','Harun','Neera',19,'Honours','N/A',12)")
